@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" width="70%">
+        <tr bgcolor="orange">
+        <th colspan="2">PT Ứng dụng Web - THIẾT KẾ FORM ĐƠN GIẢN</th></div>
+        </tr>
+        <form >
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="text" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+                <td>Quê quán</td> 
+                <td><select name="thanh_pho">  
+                <option value="">--Chọn thành phố---</option>  
+                <option value="hanoi" selected>Hà Nội</option>  
+                <option value="hochiminh">TP Hồ Chí Minh</option>  
+                </select> 
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>  
+                    <input type="radio" name="gioi_tinh" value="Nam" /> Nam  
+                    <input type="radio" name="gioi_tinh" value="Nu" /> Nữ  
+                </td>  
+            <tr>
+                <td>Kĩ năng</td>
+                <td>  
+                    <input type="checkbox" name="ki_nang" value="HTML" /> HTML
+                    <input type="checkbox" name="ki_nang" value="CSS" /> CSS
+                    <input type="checkbox" name="ki_nang" value="JS" /> JS 
+                    <input type="checkbox" name="ki_nang" value="BOOTSTRAP" /> BOOTSTRAP
+                </td>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" name="date_of_birth" id="date_of_birth"/> <br/> </td>
+            </tr>
+            <tr>    
+                <td>Giới thiệu</td>
+                <td><textarea name="gioi_thieu" cols="20" rows="4"></textarea></td>
+            </tr>
+            <tr bgcolor="orange">
+                <th colspan="2">  
+                    <input type="submit" name="dangky" value="Submit" /> 
+                    <input type="reset" name="reset" />  </th>
+                </tr>
+
+
+
+        </form>
+
+
+
+
+
+
+
+    </table>
+</body>
+</html>
