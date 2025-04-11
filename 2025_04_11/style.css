@@ -1,0 +1,46 @@
+body {
+    padding: 20px;
+    background-color: #f3ebba;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f3ebba;
+}
+
+.todolist-container {
+    background-color: #ffffec;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border: 4px dashed #ccc;
+    border-radius: 5px;
+    border-color: #e8c699;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.important {
+    font-weight: bold;
+}
+.evening li{
+    background-color: rgb(173, 248, 242);
+}
+li:nth-child(odd) {
+    background-color: #e8c699;
+}
+#ghi_nho {
+    color: #63e279;
+
+}
+li {    
+    border-radius: 7px; 
+}
+
+li:hover {
+    transform: translateX(6px);
+    opacity: 0.8;
+}        
