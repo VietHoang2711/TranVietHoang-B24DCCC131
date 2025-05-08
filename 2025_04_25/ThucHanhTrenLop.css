@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.muc {
+    display: flex;
+    background-color: #313042;
+    padding: 10px;
+}
+
+.muc a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+}
+
+.muc a:hover {
+    background-color: #313042;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.main {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #c4c4c4;
+    padding: 10px;
+}
+
+.abc {
+    text-align: center;
+    padding: 10px;
+    background-color: #313042;
+    color: white;
+}
+
+.tips {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tips li {
+    margin: 10px 0;
+}
+
+.tips li::before {
+    content: "\1F43B";
+    margin-right: 10px;
+}
