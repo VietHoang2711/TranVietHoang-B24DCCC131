@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tong_for(){
+            let sum = 0;
+            let i;
+            for (i = 1; ; i++) {
+                sum += i;
+                if (sum >= 100) {
+                    break;
+                }
+            }
+            console.log('Tổng For')
+            console.log("Giá trị i khi tổng ≥ 100 là:", i);
+            console.log("Tổng lúc đó là:", sum);
+                    
+        }
+        function tong_while(){
+            let i = 1;
+            let sum = 0;
+            while (sum < 100) {
+                sum += i;
+                i++;
+            }
+            console.log('Tổng While')
+            console.log("Giá trị i khi tổng ≥ 100 là:", i - 1);
+            console.log("Tổng lúc đó là:", sum);
+        }
+        function nhap_so(){
+            let n;
+            do {
+                n = parseInt(prompt("Nhập số nguyên dương (n > 0):"));
+            } while (isNaN(n) || n <= 0);
+            if (n % 2 === 0) {
+                console.log(n + " là số chẵn");
+            } else {
+                console.log(n + " là số lẻ");
+            }
+
+        }
+        tong_for();
+        tong_while();
+        nhap_so();
+    </script>
+</body>
+</html>
