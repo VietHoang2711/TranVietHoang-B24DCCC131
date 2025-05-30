@@ -1,0 +1,158 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e2e2e2;
+  color: #1d2530;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Light/Dark Toggle */
+.toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.mode-label {
+  margin-left: 8px;
+  font-size:30px;
+}
+
+/* Switch Style */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #c6c6c6;
+  transition: .5s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px; width: 18px;
+  left: 3px; bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2563eb;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+/* Layout */
+.container {
+  max-width: 600px;
+  margin: 80px auto 40px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;  
+  display: block;
+  margin: 0 auto 20px;
+  border: 3px solid #4d5faf;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile h1 {
+  font-size: 30px;
+}
+
+.title {
+  font-size: 15px;
+  color: #4f5c6e;
+}
+
+body.dark .title {
+  color: #94a3b8;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #1d4ed8;
+}
+
+body.dark h2 {
+  color: #60a5fa;
+}
+
+.project {
+  background: #fff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;;
+}
+
+body.dark .project {
+  background: #1e293b;
+}
+
+.project h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.project a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.lienHe a {
+  color: #1e8e9b;
+  text-decoration: none;
+}
+
+.gioiThieu {
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+}
+body.dark .gioiThieu {
+  background: #1e293b;
+}

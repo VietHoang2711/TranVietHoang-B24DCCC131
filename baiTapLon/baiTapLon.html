@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trần Việt Hoàng</title>
+  <link rel="stylesheet" href="baiTapLon.css" />
+</head>
+<body>
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider round"></span>
+    </label>
+    <span class="mode-label">☀️</span>
+  </div>
+
+  <div class="container">
+      <section class="profile">
+        <img src="z6602016959063_4168f979365937e45e77ea94d0dc9026.jpg" alt="Avatar" class="avatar" />
+        <h1>Trần Việt Hoàng</h1>
+        <p class="title">Web Developer | IT Student</p>
+      </section>
+      <section >
+        <h2 id="gioithieu">👋 Giới thiệu</h2>
+        <p class="gioiThieu">
+          18 tuổi | sinh viên công nghệ thông tin UDU PTIT, đam mê lập trình web. Mình yêu thích xây dựng giao diện đẹp, dễ dùng.       
+        </p>
+      </section>
+    <section class="projects">
+      <h2 id="duAn">🚀 Dự án</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Trang web giới thiệu bản thân dùng HTML & CSS.</p>
+        <a href="#">Xem thêm</a>
+      </div>
+      <div class="project">
+        <h3>To-do App</h3>
+        <p>chưa có</p>
+        <a href="#">Xem thêm</a>
+      </div>
+    </section>
+
+    <section class="lienHe">
+      <h2 id="lienHe">📬 Liên hệ</h2>
+      <p>Email: <a href="mailto:tvhoang.ptit@gmail.com">tvhoang.ptit@gmail</a>
+      <p>GitHub: <a href="https://github.com/VietHoang2711" target="_blank">github.com/VietHoang2711</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vi%E1%BB%87t-ho%C3%A0ng-65b464354/" target="_blank">linkedin.com/in/VietHoang</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100062884254102" target="_blank">facebook.com/VietHoang</a></p>
+    </section>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const modeLabel = document.querySelector('.mode-label');
+
+    toggle.addEventListener('change', () => {
+      body.classList.toggle('dark');
+      modeLabel.textContent = body.classList.contains('dark') ? '🌙' : '☀️';
+    });
+  </script>
+</body>
+</html>
