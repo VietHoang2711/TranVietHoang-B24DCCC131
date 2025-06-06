@@ -1,0 +1,49 @@
+     body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .slider {
+            width: 600px;
+            text-align: center;
+        }
+        .slider img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+        .controls button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .controls button:hover {
+            background-color: #0056b3;
+        }
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .dot {
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #007BFF;
+        }
