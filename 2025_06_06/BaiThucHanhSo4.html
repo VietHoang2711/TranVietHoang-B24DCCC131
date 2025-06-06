@@ -23,8 +23,6 @@
         let currentIndex = 0;
         const sliderImage = document.getElementById('slider-image');
         const dotsContainer = document.getElementById('dots-container');
-
-        // Create dots
         function createDots() {
             dotsContainer.innerHTML = '';
             images.forEach((_, index) => {
@@ -57,8 +55,6 @@
             currentIndex = (currentIndex + 1) % images.length;
             updateSlider();
         });
-
-        // Auto-slide functionality
         setInterval(() => {
             currentIndex = (currentIndex + 1) % images.length;
             updateSlider();
