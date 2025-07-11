@@ -28,7 +28,7 @@
   <script>
     let countdown;
     let timeLeft;
-    let elapsedTime = 0;
+    let elapsedTime = 0;  
     let centiseconds = 0;
     let countUp = false;
     let isPaused = false;
@@ -61,7 +61,7 @@
 
     function startTimer() {
       if (!timeInput.value && !countUp) {
-        return alert('Enter a valid time!');
+        return alert('Điền số giây để bắt đầu!');
       }
 
       timeLeft = countUp ? 0 : parseInt(timeInput.value, 10);
@@ -95,6 +95,7 @@
               }
             }
           }
+         
           updateTimeDisplay(countUp ? elapsedTime : timeLeft, centiseconds);
         }
       }, 10);
